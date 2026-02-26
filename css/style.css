@@ -1,0 +1,38 @@
+span{
+    color:aqua;
+    font-size: large;
+}
+.subhead{
+    font-family: sans-serif;
+}
+#para{
+    background-color: aqua;
+    color:red;
+}
+span,subhead,h1{
+    background-color: chocolate;
+
+}
+*{
+    background-color:yellow;
+}
+div p{
+    color:green;
+
+}
+/*child selector*/
+div > p{
+    color:violet;
+}
+/*Attribute selector*/
+input[type="text"]{
+    color:blue;
+}
+/*Adjacent selector*/
+h1 + p{
+    color:green;
+}
+/* general siblings*/
+h1 ~ p{
+    color:black;
+}
