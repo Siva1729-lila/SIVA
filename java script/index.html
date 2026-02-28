@@ -5,6 +5,35 @@
     <link rel="icon" href="../assets/image.png">
 </head>
 <body>
-    <script src="./script.js"></script> 
+ 
+        <p id="para">Lorem ipsum dolor sit amet.</p>
+        <ul id="list">
+        </ul>
+        <button id="btn"> click</button>
+        
+    <!-- <p>Hello World!!</p> -->
+    <script>
+        const btn=document.getElementById("btn");
+        btn.addEventListener("click",function(){
+            const li=document.createElement("li");
+            li.innerText="New li Element";
+            document.getElementById("list").append(li);
+        })
+        //Document.getElementById("para").textcontent="Hello World!!"
+    // document.getElementById("para").innerText="Hello World!!"
+    //  document.getElementsByClassName("para")[0].innerHTML = "Hello DS!!";
+    // document.getElementById("para").innerHTML="<p>Hello World</p>";
+    // var para=document.getElementById("para");
+    // console.log(para);
+    // para.style.color="red";
+    // para.style.backgroundColor="green"
+    // para.style.fontSize="50px"
+    // var para1=document.getElementsByClassName("para1");
+    // console.log(para1)
+    // const li=document.createElement("li");
+    // li.innerText="New li Element";
+    // document.getElementById("list").append(li);
+
+    </script> 
 </body>
 </html>

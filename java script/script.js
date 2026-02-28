@@ -332,7 +332,9 @@
 //const
 const i=10; //global scope
 if(true){
+
     const j=20; //block scope
+    console.log(j);
 }
 console.log(i);
-console.log(j);
+
