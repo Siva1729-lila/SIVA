@@ -330,11 +330,92 @@
 // console.log(b);
 
 //const
-const i=10; //global scope
-if(true){
+// const i=10; //global scope
+// if(true){
 
-    const j=20; //block scope
-    console.log(j);
-}
-console.log(i);
+//     const j=20; //block scope
+//     console.log(j);
+// }
+// console.log(i);
 
+
+//promise(ES6)
+// const promise=new Promise((resolve,reject)=>{
+//     var success=true;
+//     if(success){
+//         resolve("Task completed");
+
+//     }
+//     else{
+//         reject("Task not completed");
+//     }
+
+// })
+// promise.then((message)=>{
+//     console.log(message);
+
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+
+// const promise=new Promise((resolve,reject)=>{
+//     var success=true;
+//     if(success){
+//         setTimeout(()=>{
+//             resolve("Task completed");
+//         },2000);
+//     }
+//     else{
+//           reject("Task not completed");
+//     }
+// })
+
+//   promise.then((msg)=>console.log(msg))  
+//   .catch((err)=>console.log(err));
+
+//set timeout
+//   const promise=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//     var success=true;
+//     if(success){
+//             resolve("Task completed");
+//         }else{
+//               reject("Task not completed");
+//         }
+//     },5000);
+// });
+
+//   promise.then((msg)=>console.log(msg))  
+//   .catch((err)=>console.log(err));
+
+//set Interval
+// var count=1;
+// const IntervalCount=setInterval(()=>{
+//     console.log(count);
+//     count++;
+//     if(count>5){
+//         clearInterval(IntervalCount)
+//     }
+// },2000);
+
+//fetch 
+// const getData=()=>{
+//     return fetch("https://jsonplaceholder.typicode.com/users")
+// }
+// getData().then((res)=>res.json())
+// .then((data)=>console.log(data))
+// .catch((err)=>console.log(err));
+
+//async and await
+// const getData=async()=>{
+//     try{
+//         const res=await fetch("https://jsonplaceholder.typicode.com/users")
+//         const data=await res.json();
+//         console.log(data);
+
+//     }catch(err){
+//         console.log(err)
+//     }
+// }
+// getData();
